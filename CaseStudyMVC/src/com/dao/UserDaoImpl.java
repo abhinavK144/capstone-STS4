@@ -15,13 +15,13 @@ public class UserDaoImpl implements UserDao{
 	JdbcTemplate jdbcTemplate;    
     	
 	public int saveUser(User u) {
-		String query = "insert into users values('" + u.getFName() + "','" + u.getLName() + "','" + u.getPhone_No()+ "','" + u.getEmail_Id() + "','" + u.getPassword() + "','" + u.getAddress() +"','" + u.getRole() + "')";
+		String query = "insert into users values('" + u.getFName() + "','" + u.getLName() + "','" + u.getPhone_No()+ "','" + u.getEmail_Id() + "','" + u.getPassword() + "','" + u.getAddress() +"')";
 		return jdbcTemplate.update(query);
 	}
 
 	public int updateUser(User u) {
 		String query = "update users set FName='" + u.getFName() + "',Password='" + u.getPassword()+ "',phone_no='" + u.getPhone_No() + "',address='"
-				+ u.getAddress() + "',Email_Id='" + u.getEmail_Id() + "',role='" + u.getRole()+ "' where Email_id='" + u.getEmail_Id() + "' ";
+				+ u.getAddress() + "',Email_Id='" + u.getEmail_Id() + "' where Email_id='" + u.getEmail_Id() + "' ";
 		return jdbcTemplate.update(query);
 	}
 

@@ -346,7 +346,7 @@ right: 0;
 				<h2 class="registration__title-centre">Registration</h2>
 				<br>
 
-				<form action="user" method="post"  class="registration__form">
+				<form action="./spring/user" method="post"  class="registration__form">
 
 					<div class="registration_row">
 						<div class="registration__content">
@@ -394,7 +394,15 @@ right: 0;
                     <label for="" class="registration__label">Address</label>
                     <textarea type="text" class="textarea" name="message" cols="58" rows="5" id="address" path="address" required="" ></textarea>
                   </div>
-					
+				
+			<!-- <div class="registration__content">	
+				<label for="" class="registration__label">role:</label>
+ 					 <select name="role" id="role">
+   					 <option value="admin">admin</option>
+   					 <option value="user">user</option>
+  					 </select>
+			    </div> -->	
+			    
 					<div>	
 						<button class="button" type="submit" value="user">Sign Up</button>
 					</div>
