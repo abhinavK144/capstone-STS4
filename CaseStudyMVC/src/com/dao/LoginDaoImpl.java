@@ -57,11 +57,7 @@ public class LoginDaoImpl implements loginDao{
 			else
 				return false;
 		  
-		  
-
-
-		
-		
+	
 	}
 	
    

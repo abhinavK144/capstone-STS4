@@ -7,22 +7,22 @@ public class User {
 	private String Email_Id;
 	private String Address;
 	private String Password;
-	private String role;
+//	private String role;
 	
 
-	public String getRole() {
-		return role;
-	}
-
-	public void setRole(String role) {
-		this.role = role;
-	}
+//	public String getRole() {
+//		return role;
+//	}
+//
+//	public void setRole(String role) {
+//		this.role = role;
+//	}
 
 	public User() {
 		super();
 	}
 
-	public User(String FName,String LName, String Phone_No,String Email_Id ,String Address, String Password , String role ) {
+public User(String FName,String LName, String Phone_No,String Email_Id ,String Address, String Password) {
 		super();
 		this.FName = FName;
 		this.LName = LName;
@@ -30,7 +30,7 @@ public class User {
 		this.Email_Id = Email_Id;
 		this.Address = Address;
 		this.Password = Password;
-		this.role = role;
+	//	this.role = role;
 		
 	}
 	
@@ -73,7 +73,7 @@ public class User {
 	@Override
 	public String toString() {
 		return "User [FName=" + FName + ", LName=" + LName + ", Phone_No=" + Phone_No + ", Address=" + Address
-				+ ", Password=" + Password + ", Email_Id=" + Email_Id + ", role=" + role +"]";
+				+ ", Password=" + Password + ", Email_Id=" + Email_Id + "]";
 	}
 	
 	
